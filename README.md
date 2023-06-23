@@ -29,7 +29,7 @@ func main() {
 
     // Define the instance of the Algorithm used.
     algorithm := &IncrementingColorAlgorithm{
-        currentColor: *colors,
+        currentColor: board[0][0],
         numColors:    *colors,
     }
     

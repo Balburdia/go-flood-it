@@ -55,7 +55,7 @@ func main() {
 	// TODO: Replace the example bellow with your implementation
 	// --------------------------------EXAMPLE-------------------------------------
 	algorithm := &IncrementingColorAlgorithm{
-		currentColor: *colors,
+		currentColor: board[0][0],
 		numColors:    *colors,
 	}
 	// --------------------------------EXAMPLE-------------------------------------
