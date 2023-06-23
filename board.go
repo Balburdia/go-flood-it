@@ -29,8 +29,9 @@ func drawBoard(board Board) {
 
 	for y, row := range board {
 		for x, cell := range row {
-			// Draw the cell.
-			termbox.SetCell(x, y, ' ', termbox.ColorDefault, colorMapping[cell])
+			// Draw the cell with two spaces to look better in the terminal
+			termbox.SetCell(2*x, y, ' ', termbox.ColorDefault, colorMapping[cell])
+			termbox.SetCell(2*x+1, y, ' ', termbox.ColorDefault, colorMapping[cell])
 		}
 	}
 
