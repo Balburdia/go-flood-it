@@ -48,4 +48,6 @@ In order to run the game you just need to build your application with `go build`
 
 - `--seed`: Seed number to be used in all random-based decisions in the game when creating its board. Default: `time.Now().UnixNano()`
 
+- `--sleep`: Time to sleep between steps. Default: `500ms`. Usage: `--sleep 1s`, `--sleep 250ms`.
+
 - `--nodraw`: If specified, the board will not be drawn and only the number of steps will be printed by the end of execution. This also removes the waiting between steps.

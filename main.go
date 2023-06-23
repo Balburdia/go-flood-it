@@ -14,6 +14,7 @@ func main() {
 		size   = flag.Int("size", 10, "Size of the game board.")
 		colors = flag.Int("colors", 3, "Number of colors in the game.")
 		seed   = flag.Int64("seed", time.Now().UnixNano(), "Seed number used in the random generator.")
+		sleep  = flag.Duration("sleep", 500*time.Millisecond, "Time to sleep between steps.")
 		noDraw = flag.Bool("nodraw", false, "Whether to draw the game board.")
 	)
 
@@ -87,7 +88,7 @@ func main() {
 		}
 
 		if !*noDraw {
-			time.Sleep(time.Second)
+			time.Sleep(*sleep)
 		}
 
 	}
